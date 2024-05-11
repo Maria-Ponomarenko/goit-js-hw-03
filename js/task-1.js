@@ -1,7 +1,11 @@
+// function slugify(title) {
+//     const titleLower = title.toLowerCase();
+//     const slug = titleLower.split(" ");
+//     return slug.join("-")
+// }
+
 function slugify(title) {
-    const titleLower = title.toLowerCase();
-    const slug = titleLower.split(" ");
-    return slug.join("-")
+    return title.toLowerCase().split(" ").join("-");
 }
 
 console.log(slugify("Arrays for begginers")); // "arrays-for-begginers"
